@@ -9,7 +9,7 @@ Clone this repo into any location on your mac
 ```chmod -x setup.sh```
 
 ### 3. Run setup script
-```bash
+```
 $ sh setup.sh
 Setup symbolic link for ~/.bash_profile
 Setup symbolic link for ~/.gitconfig
