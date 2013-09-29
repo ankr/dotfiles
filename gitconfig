@@ -1,13 +1,26 @@
 [user]
 	name = Andreas Kristiansen
 	email = mail@ankr.dk
+[github]
+	user = ankr
 [alias]
 	st = status
-	df = diff
-	cv = commit -v
 	co = checkout
+	nb = checkout -b
+	df = diff
+	ci = commit
+	cv = commit -v
 	br = branch
+	ca = commit --amend
+	cp = cherry-pick
 [color]
-	ui = true
+	branch  = auto
+	diff = auto
+	status = auto
+[color "diff"]
+	meta = cyan bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 [push]
-	default = simple
+	default = current
