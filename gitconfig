@@ -17,10 +17,5 @@
 	branch  = auto
 	diff = auto
 	status = auto
-[color "diff"]
-	meta = cyan bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
 [push]
 	default = current
