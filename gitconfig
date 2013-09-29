@@ -1,0 +1,11 @@
+[user]
+	name = Andreas Kristiansen
+	email = mail@ankr.dk
+[alias]
+	st = status
+	df = diff
+	cv = commit -v
+	co = checkout
+	br = branch
+[color]
+	ui = true
