@@ -5,10 +5,21 @@ export EDITOR=vim
 alias l="ls -l"
 alias ll="ls -la"
 
-# more aliases
-alias grin="grep -rin"
+# navigation aliases
+alias ..="cd ../"
+alias ...="cd ../../"
+
+# aliases changing default behaviors
+alias grep="grep --color=auto"
+alias mkdir="mkdir -p"
+alias less="less -r"
+alias tree="tree -C"
+
+# convenience aliases
 alias scls="screen -ls"
-alias synch="find . -name '*.php' -exec php -l {} \;" # php syntax check in current folder (+subs)
+alias syntax="find . -name '*.php' -exec php -l {} \;" # php syntax check in current folder (+subs)
+alias grin='grep -rin'
+alias now='date +"%T"'
 
 # Showing current branch when in git repos
 function parse_git_branch_and_add_brackets {
