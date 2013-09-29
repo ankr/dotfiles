@@ -1,0 +1,10 @@
+caption always "%{kB}| %{+b rB}access%{-b kB} |%{Yb} %Y-%02m-%02d %0c %{k}|%{C} %LD %{k}|%{G} %l %{k}|%{W} %-Lw%{+u}%n %t%{-u}%+Lw"
+
+autodetach      on
+startup_message off
+activity        "%C -> %n%f %t activity!"
+pow_detach_msg  "Good day."
+vbell_msg       " *beep* "
+defscrollback 1000
+shell -$SHELL
+defmonitor on
