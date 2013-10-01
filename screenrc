@@ -1,4 +1,4 @@
-caption always "%{kB}| %{+b rB}access%{-b kB} |%{Yb} %Y-%02m-%02d %0c %{k}|%{C} %LD %{k}|%{G} %l %{k}|%{W} %-Lw%{+u}%n %t%{-u}%+Lw"
+caption always "%{kB}| %{+b rB} %H  %{-b kB} |%{Yb} %Y-%02m-%02d %0c %{k}|%{C} %LD %{k}|%{G} %l %{k}|%{W} %-Lw%{+u}%n %t%{-u}%+Lw"
 
 autodetach      on
 startup_message off
