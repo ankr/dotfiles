@@ -21,11 +21,19 @@ alias syntax="find . -name '*.php' -exec php -l {} \;" # php syntax check in cur
 alias grin='grep -rin'
 alias now='date +"%T"'
 
-# Showing current branch when in git repos
-function parse_git_branch_and_add_brackets {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \[\1\]/'
-}
-PS1="\h:\w \u\[\033[0;32m\]\$(parse_git_branch_and_add_brackets) \[\033[0m\]\$ "
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+export GIT_PS1_SHOWDIRTYSTATE="yes"
+export GIT_PS1_SHOWSTASHSTATE="yes"
+export GIT_PS1_SHOWUNTRACKEDFILES="yes"
+export GIT_PS1_SHOWUPSTREAM="auto"
+
+# Color prompt
+if [[ $EUID == 0 ]] ;
+then
+	export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]]$(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
+else
+	export PS1='\[\e[1;32m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]]$(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
+fi
 
 # Adding brew bash_completion if available
 if [ -f $(brew --prefix)/etc/bash_completion ];

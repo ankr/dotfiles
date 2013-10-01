@@ -1,5 +1,7 @@
 # dotfiles
 
+My dot files. Their contents is brought together from all parts of the internet!
+
 ## Installation
 
 ### 1. Clone repository
