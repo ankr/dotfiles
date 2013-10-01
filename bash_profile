@@ -21,12 +21,6 @@ alias syntax="find . -name '*.php' -exec php -l {} \;" # php syntax check in cur
 alias grin='grep -rin'
 alias now='date +"%T"'
 
-# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-export GIT_PS1_SHOWDIRTYSTATE="yes"
-export GIT_PS1_SHOWSTASHSTATE="yes"
-export GIT_PS1_SHOWUNTRACKEDFILES="yes"
-export GIT_PS1_SHOWUPSTREAM="auto"
-
 # Color prompt
 if [[ $EUID == 0 ]] ;
 then
