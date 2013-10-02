@@ -7,6 +7,9 @@ My dot files. Their contents is brought together from all parts of the internet!
 ### 1. Clone repository
 Clone this repo into any location on your mac
 
+Ex.
+```git clone git@github.com:ankr/dotfiles.git ~/dotfiles```
+
 ### 2. Make script executeable
 ```chmod -x setup.sh```
 
