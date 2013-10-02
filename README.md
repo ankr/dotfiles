@@ -18,3 +18,12 @@ Setup symbolic link for ~/.gitconfig
 Setup symbolic link for ~/.screenrc
 Setup symbolic link for ~/.vimrc
 ```
+
+### 4. Make your custom changes, like setting up ~/.gitconfig
+```
+[user]
+	name = <Your name>
+	email = <Your email>
+[github]
+	user = <Your username>
+```
