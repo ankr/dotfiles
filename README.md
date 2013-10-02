@@ -30,3 +30,6 @@ Setup symbolic link for ~/.vimrc
 [github]
 	user = <Your username>
 ```
+
+### 5. Add your custom stuff
+Add stuff into the `custom` folder
