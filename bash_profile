@@ -34,3 +34,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ];
 then
 	. $(brew --prefix)/etc/bash_completion
 fi
+
+# Load each custom file
+for f in ~/dotfiles/custom/*
+do
+	source $f
+done
