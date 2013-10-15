@@ -20,7 +20,7 @@ Setup symbolic link for ~/.screenrc
 Setup symbolic link for ~/.vimrc
 ```
 
-### 4. Setup up `~/.dotfiles/.git_custom`
+### 4. Setup up `~/.dotfiles/git_custom`
 ```
 [user]
 	name = <Your name>
