@@ -5,9 +5,7 @@ My dot files. Their contents is brought together from all parts of the internet!
 ## Installation
 
 ### 1. Clone repository
-Clone this repo into any location on your mac
-
-Ex.
+Clone this repo into `~/.dotfiles`
 ```git clone git@github.com:ankr/dotfiles.git ~/dotfiles```
 
 ### 2. Make script executeable
@@ -22,7 +20,7 @@ Setup symbolic link for ~/.screenrc
 Setup symbolic link for ~/.vimrc
 ```
 
-### 4. Make your custom changes, like setting up ~/.gitconfig
+### 4. Setup up `~/.dotfiles/.git_custom`
 ```
 [user]
 	name = <Your name>
@@ -30,3 +28,5 @@ Setup symbolic link for ~/.vimrc
 [github]
 	user = <Your username>
 ```
+
+### 5. Add custom stuff to `~/.dotfiles/bash_custom`
