@@ -5,7 +5,8 @@ My dot files. Their contents is brought together from all parts of the internet!
 ## Installation
 
 ### 1. Clone repository
-```git clone git@github.com:ankr/dotfiles.git ~/dotfiles```
+```git clone git@github.com:ankr/dotfiles.git ~/.dotfiles```
+> You have to clone into `~/.dotfiles`
 
 ### 2. Make script executeable
 ```chmod -x setup.sh```
