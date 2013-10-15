@@ -22,6 +22,8 @@ alias grin='grep -rin'
 alias now='date +"%T"'
 
 # Color prompt
+# Shows PS1 like:
+# $user @ $host [$pwd] ($gitbranch)
 if [[ $EUID == 0 ]] ;
 then
 	export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]]$(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
@@ -34,3 +36,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ];
 then
 	. $(brew --prefix)/etc/bash_completion
 fi
+
+# Read .bash_custom
+if [ -f ~/.dotfiles/.bash_custom ];
+then
+	source ~/.dotfiles/.bash_custom
+fi
+
