@@ -21,6 +21,13 @@ alias syntax="find . -name '*.php' -exec php -l {} \;" # php syntax check in cur
 alias grin='grep -rin'
 alias now='date +"%T"'
 
+# Make sure `have` is defined
+have() {
+  unset -v have
+  PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
+  have="yes"
+}
+
 # Load bash completions
 if [ -d /etc/bash_completion.d ] ;
 then
@@ -33,7 +40,7 @@ fi
 # Adding brew bash_completion if available
 if command -v brew > /dev/null && [ -f $(brew --prefix)/etc/bash_completion ];
 then
-	. $(brew --prefix)/etc/bash_completion
+	source $(brew --prefix)/etc/bash_completion
 fi
 
 # Shows PS1 like:
