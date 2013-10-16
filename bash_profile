@@ -54,7 +54,7 @@ else
 fi
 
 # Read .bash_custom
-if [ -f ~/.dotfiles/bash_custom ];
+if [ -f ~/.dotfiles/bash_custom ] ;
 then
 	source ~/.dotfiles/bash_custom
 fi
