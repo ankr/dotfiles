@@ -1,7 +1,7 @@
 #/bin/bash
 current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # Where this script is located
 
-blacklist=('.' '..' 'setup.sh' 'README.md') # Do NOT link these files
+blacklist=('.' '..' 'git_custom' 'bash_custom' 'setup.sh' 'README.md') # Do NOT link these files
 
 for file in $current/*
 do
