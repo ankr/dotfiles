@@ -21,33 +21,29 @@ alias syntax="find . -name '*.php' -exec php -l {} \;" # php syntax check in cur
 alias grin='grep -rin'
 alias now='date +"%T"'
 
-# Shows PS1 like:
-# $user @ $host [$pwd] ($gitbranch)
-if command -v __git_ps1 >/dev/null 2>&1 ;
+# Load bash completions
+if [ -d /etc/bash_completion.d ] ;
 then
-	# Color prompt
-	if [[ $EUID == 0 ]] ;
-	then
-		export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $\n\[\e[1m\]-> \[\e[0m\]'
-	else
-		export PS1='\[\e[1;32m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $\n\[\e[1m\]-> \[\e[0m\]'
-	fi
-# Shows PS1 like:
-# $user @ $host [$pwd] ($gitbranch)
-else
-	# Color prompt
-	if [[ $EUID == 0 ]] ;
-	then
-		export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
-	else
-		export PS1='\[\e[1;32m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
-	fi
+	for file in /etc/bash_completion.d/* ;
+	do
+	    source "$file"
+	done
 fi
 
 # Adding brew bash_completion if available
-if [ -f $(brew --prefix)/etc/bash_completion ];
+if command -v brew > /dev/null && [ -f $(brew --prefix)/etc/bash_completion ];
 then
 	. $(brew --prefix)/etc/bash_completion
+fi
+
+# Shows PS1 like:
+# $user @ $host [$pwd] ($gitbranch)
+# Color prompt
+if [[ $EUID == 0 ]] ;
+then
+	export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
+else
+	export PS1='\[\e[1;32m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
 fi
 
 # Read .bash_custom
