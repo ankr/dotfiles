@@ -1,18 +1,18 @@
 #/bin/bash
-current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # Where this script is located
-
-blacklist=('.' '..' 'git_custom' 'bash_custom' 'setup.sh' 'README.md') # Do NOT link these files
-
-for file in $current/*
+for file in ~/.dotfiles/*
 do
     base=$(basename $file)
 
-    if ! [ $(echo ${blacklist[@]} | grep $base | wc -l) -gt 0 ] ;
+    # Only link certain files
+    if [ "$base" == "bash_profile" ] ||
+       [ "$base" == "gitconfig" ] ||
+       [ "$base" == "vimrc" ] ||
+       [ "$base" == "screenrc" ]
     then
         if [ -f "$HOME/.$base" ];
         then
             mv "$HOME/.$base" "$HOME/.$base.bak" # Backup existing files
-            echo "Moved existing ~/.$base to $HOME/.$base.bak"
+            echo "Moved existing ~/.$base to ~/.$base.bak"
         fi
 
         ln -s $file "$HOME/.$base"
