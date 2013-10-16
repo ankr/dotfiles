@@ -23,9 +23,9 @@ alias now='date +"%T"'
 
 # Make sure `have` is defined
 have() {
-  unset -v have
-  PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
-  have="yes"
+	unset -v have
+	PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
+	have="yes"
 }
 
 # Load bash completions
