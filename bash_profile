@@ -2,8 +2,7 @@
 export EDITOR=vim
 
 # Make `ls` show colors
-if [ $(uname) == "Linux" ] ;
-then
+if [ $(uname) == "Linux" ] ; then
 	alias ls='ls --color=auto'
 else # OS X
 	alias ls='ls -G'
@@ -38,33 +37,28 @@ have() {
 }
 
 # Load bash completions
-if [ -d /etc/bash_completion.d ] ;
-then
-	for file in /etc/bash_completion.d/* ;
-	do
+if [ -d /etc/bash_completion.d ] ; then
+	for file in /etc/bash_completion.d/* ; do
 		source "$file"
 	done
 fi
 
 # Adding brew bash_completion if available
-if command -v brew > /dev/null && [ -f $(brew --prefix)/etc/bash_completion ] ;
-then
+if command -v brew > /dev/null && [ -f $(brew --prefix)/etc/bash_completion ] ; then
 	source $(brew --prefix)/etc/bash_completion
 fi
 
 # Shows PS1 like:
 # $user @ $host [$pwd] ($gitbranch)
 # Color prompt
-if [[ $EUID == 0 ]] ;
-then
+if [[ $EUID == 0 ]] ; then
 	export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
 else
 	export PS1='\[\e[1;32m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;34m\]\w \[\e[0m\]] $(__git_ps1 " (%s)")\n\[\e[1m\]-> \[\e[0m\]'
 fi
 
 # Read .bash_custom
-if [ -f ~/.dotfiles/bash_custom ] ;
-then
+if [ -f ~/.dotfiles/bash_custom ] ; then
 	source ~/.dotfiles/bash_custom
 fi
 
