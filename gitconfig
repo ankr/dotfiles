@@ -2,6 +2,7 @@
 	st = status
 	co = checkout
 	nb = checkout -b
+	ap = add -p
 	df = diff
 	ci = commit
 	cv = commit -v
