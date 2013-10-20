@@ -1,6 +1,14 @@
 # vim as default editor
 export EDITOR=vim
 
+# aliases changing default behaviors
+alias ls="ls -G"
+alias grep="grep --color=auto"
+alias mkdir="mkdir -p"
+alias less="less -r"
+alias tree="tree -C"
+alias sublime="sublime -a"
+
 # ls aliasses
 alias l="ls -l"
 alias ll="ls -la"
@@ -9,15 +17,9 @@ alias ll="ls -la"
 alias ..="cd ../"
 alias ...="cd ../../"
 
-# aliases changing default behaviors
-alias grep="grep --color=auto"
-alias mkdir="mkdir -p"
-alias less="less -r"
-alias tree="tree -C"
-
 # convenience aliases
 alias scls="screen -ls"
-alias syntax="find . -name '*.php' -exec php -l {} \;" # php syntax check in current folder (+subs)
+alias syntax="find . -name '*.php' -exec php -l {} \;"
 alias grin='grep -rin'
 alias now='date +"%T"'
 
@@ -33,12 +35,12 @@ if [ -d /etc/bash_completion.d ] ;
 then
 	for file in /etc/bash_completion.d/* ;
 	do
-	    source "$file"
+		source "$file"
 	done
 fi
 
 # Adding brew bash_completion if available
-if command -v brew > /dev/null && [ -f $(brew --prefix)/etc/bash_completion ];
+if command -v brew > /dev/null && [ -f $(brew --prefix)/etc/bash_completion ] ;
 then
 	source $(brew --prefix)/etc/bash_completion
 fi
