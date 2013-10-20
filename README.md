@@ -18,6 +18,7 @@ Also, here's a link for my [Sublimt Text 3 settings](https://gist.github.com/ank
 $ sh ./setup.sh
 Setup symbolic link for ~/.bash_profile
 Setup symbolic link for ~/.gitconfig
+Setup symbolic link for ~/.inputrc
 Setup symbolic link for ~/.screenrc
 Setup symbolic link for ~/.vimrc
 ```
