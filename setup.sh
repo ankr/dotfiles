@@ -10,8 +10,7 @@ do
        [ "$base" == "inputrc" ] ||
        [ "$base" == "screenrc" ]
     then
-        if [ -f "$HOME/.$base" ];
-        then
+        if [ -f "$HOME/.$base" ] ; then
             mv "$HOME/.$base" "$HOME/.$base.bak" # Backup existing files
             echo "Moved existing ~/.$base to ~/.$base.bak"
         fi

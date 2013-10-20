@@ -13,7 +13,7 @@ My dot files. Their contents is brought together from all parts of the internet!
 
 ### 3. Run setup script
 ```
-$ sh setup.sh
+$ sh ./setup.sh
 Setup symbolic link for ~/.bash_profile
 Setup symbolic link for ~/.gitconfig
 Setup symbolic link for ~/.screenrc
