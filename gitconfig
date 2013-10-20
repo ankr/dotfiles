@@ -9,6 +9,7 @@
 	br = branch
 	ca = commit --amend
 	cp = cherry-pick
+	lg = log -p
 [color]
 	branch  = auto
 	diff = auto
