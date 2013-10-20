@@ -1,8 +1,15 @@
 # vim as default editor
 export EDITOR=vim
 
+# Make `ls` show colors
+if [ $(uname) == "Linux" ] ;
+then
+	alias ls='ls --color=auto'
+else # OS X
+	alias ls='ls -G'
+fi
+
 # aliases changing default behaviors
-alias ls="ls -G"
 alias grep="grep --color=auto"
 alias mkdir="mkdir -p"
 alias less="less -r"
