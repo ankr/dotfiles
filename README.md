@@ -2,6 +2,8 @@
 
 My dot files. Their contents is brought together from all parts of the internet!
 
+Also, here's a link for my [Sublimt Text 3 settings](https://gist.github.com/ankr/7074925).
+
 ## Installation
 
 ### 1. Clone repository
