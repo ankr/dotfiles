@@ -7,6 +7,7 @@ do
     if [ "$base" == "bash_profile" ] ||
        [ "$base" == "gitconfig" ] ||
        [ "$base" == "vimrc" ] ||
+       [ "$base" == "inputrc" ] ||
        [ "$base" == "screenrc" ]
     then
         if [ -f "$HOME/.$base" ];
