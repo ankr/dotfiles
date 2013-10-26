@@ -1,7 +1,16 @@
 # vim as default editor
 export EDITOR=vim
 
-# Make `ls` show colors
+# history
+shopt -s histappend
+shopt -s cmdhist
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+export HISTCONTROL=ignoredups
+export HISTIGNORE='ls:ll:l:history'
+export HISTTIMEFORMAT='%F %T '
+
+# make `ls` show colors
 if [ $(uname) == "Linux" ] ; then
 	alias ls='ls --color=auto'
 else # OS X
