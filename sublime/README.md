@@ -6,7 +6,7 @@ Run setup script to configure Sublime Text 3 for a nice experience.
 
 ```bash
 # Go to directory
-cd ~/.dotfiles/sublime/setup.sh
+cd ~/.dotfiles/sublime/
 
 # Make executeable
 chmod -x setup.sh
