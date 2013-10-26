@@ -4,7 +4,7 @@ My dot files. Their contents is brought together from all parts of the internet!
 
 ## Installation
 
-Look here for the [installation of Sublime Text settings](https://github.com/ankr/dotfiles/sublime).
+Look here for the [installation of Sublime Text settings](https://github.com/ankr/dotfiles/tree/master/sublime).
 
 ### 1. Clone repository
 ```git clone git@github.com:ankr/dotfiles.git ~/.dotfiles```
