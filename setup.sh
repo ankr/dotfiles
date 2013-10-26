@@ -5,6 +5,7 @@ do
 
     # Only link certain files
     if [ "$base" == "bash_profile" ] ||
+       [ "$base" == "bashrc" ] ||
        [ "$base" == "gitconfig" ] ||
        [ "$base" == "vimrc" ] ||
        [ "$base" == "inputrc" ] ||
