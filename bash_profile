@@ -36,7 +36,6 @@ alias ...="cd ../../"
 alias scls="screen -ls"
 alias syntax="find . -name '*.php' -exec php -l {} \;"
 alias grin='grep -rin'
-alias now='date +"%T"'
 
 # Make sure `have` is defined
 have() {
