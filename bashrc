@@ -36,6 +36,8 @@ alias ...="cd ../../"
 alias scls="screen -ls"
 alias syntax="find . -name '*.php' -exec php -l {} \;"
 alias grin='grep -rin'
+alias psa="ps aux"
+alias psg="ps aux | grep $0"
 
 # make sure `have` is defined
 have() {
