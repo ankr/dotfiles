@@ -46,6 +46,12 @@ function intip {
 	echo $IP
 }
 
+# return the machines public IP address
+function extip {
+	local IP=`curl -sS http://checkip.dyndns.org | awk '{print $6}' | awk 'BEGIN {FS = "<"} {print $1}'`
+	echo $IP
+}
+
 # make sure `have` is defined
 have() {
 	unset -v have
