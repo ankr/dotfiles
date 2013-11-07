@@ -39,6 +39,13 @@ alias grin='grep -rin'
 alias psa="ps aux"
 alias psg="ps aux | grep $0"
 
+# return the machines local IP address
+function intip {
+	local INTF=`route get default | grep interface | awk '{print $2}'`
+	local IP=`ifconfig $INTF | grep 'inet ' | cut -d ' ' -f 2`
+	echo $IP
+}
+
 # make sure `have` is defined
 have() {
 	unset -v have
