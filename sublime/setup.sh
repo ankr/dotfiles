@@ -6,6 +6,7 @@ install_path="$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
 preferences="${install_path}Preferences.sublime-settings"
 packages="${install_path}Package Control.sublime-settings"
 bindings="${install_path}Default (OSX).sublime-keymap"
+snippets="${install_path}Snippets"
 
 if [[ ! -d "$install_path" ]] ; then
 	echo "Sublime Text 3 not found, exiting."
@@ -35,3 +36,11 @@ fi
 
 ln -s "${local_path}Default (OSX).sublime-keymap" "$bindings"
 echo "Setup symbolic link for Sublime Text 3 key bindings"
+
+# Snippets
+if [ -d "$snippets" ] && $(mv "$snippets" "$snippets.bak") ; then
+	echo "Backed up existing snippets folder to $snippets.bak"
+fi
+
+ln -s "${local_path}Snippets" "$snippets"
+echo "Setup symbolic link for Sublime Text 3 snippets"
