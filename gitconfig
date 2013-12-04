@@ -10,6 +10,7 @@
 	ca = commit --amend
 	cp = cherry-pick
 	lg = log -p
+	fakeignore = update-index --assume-unchanged
 [color]
 	branch  = auto
 	diff = auto
