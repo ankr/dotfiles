@@ -11,7 +11,7 @@ Look here for the [installation of Sublime Text settings](https://github.com/ank
 > You have to clone into `~/.dotfiles`
 
 ### 2. Make script executeable
-```chmod -x setup.sh```
+```chmod +x setup.sh```
 
 ### 3. Run setup script
 ```
