@@ -70,7 +70,9 @@ have() {
 # load bash completions
 if [ -d /etc/bash_completion.d ] ; then
 	for file in /etc/bash_completion.d/* ; do
-		source "$file"
+		if [ -f "$file" ] ; then
+			source "$file"
+		fi
 	done
 fi
 
