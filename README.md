@@ -1,6 +1,7 @@
 # dotfiles
 
 My dot files. Their contents is brought together from all parts of the internet.
+These configurations has been used in OSX, Debian and Ubuntu.
 
 ## Installation
 
