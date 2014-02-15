@@ -84,9 +84,9 @@ fi
 # shows PS1 like:
 # $user @ $host [$pwd] ($gitbranch)
 if [[ $EUID == 0 ]] ; then
-	export PS1='\[\e[1;31m\]\u @ \H [ \w ] [ \D{%H:%M} ] $(__git_ps1 "( %s )")\n\[\e[1m\]-> \[\e[0m\]'
-else
 	export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;32m\]\w \[\e[0m\]] [ \D{%H:%M} ] $(__git_ps1 "( %s )")\n\[\e[1m\]-> \[\e[0m\]'
+else
+	export PS1='\[\e[0;37m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;32m\]\w \[\e[0m\]] [ \D{%H:%M} ] $(__git_ps1 "( %s )")\n\[\e[1m\]-> \[\e[0m\]'
 fi
 
 # read .bash_custom
