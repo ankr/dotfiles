@@ -69,7 +69,7 @@ have() {
 
 # load bash completions
 if [ -d /etc/bash_completion.d ] ; then
-	for file in /etc/bash_completion.d/* ; do
+	for file in "/etc/bash_completion.d/*" ; do
 		if [ -f "$file" ] ; then
 			source "$file"
 		fi
