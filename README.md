@@ -1,6 +1,6 @@
 # dotfiles
 
-My dot files. Their contents is brought together from all parts of the internet!
+My dot files. Their contents is brought together from all parts of the internet.
 
 ## Installation
 
@@ -8,14 +8,12 @@ Look here for the [installation of Sublime Text settings](https://github.com/ank
 
 ### 1. Clone repository
 ```git clone git@github.com:ankr/dotfiles.git ~/.dotfiles```
-> You have to clone into `~/.dotfiles`
+> It's assumed that you clone into `~/.dotfiles`
 
-### 2. Make script executeable
-```chmod +x setup.sh```
-
-### 3. Run setup script
+### 2. Link dotfiles
 ```
-$ sh ./setup.sh
+$ chmod +x link.sh
+$ ./link.sh
 Setup symbolic link for ~/.bash_profile
 Setup symbolic link for ~/.gitconfig
 Setup symbolic link for ~/.inputrc
