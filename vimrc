@@ -49,9 +49,6 @@ endif
 set hidden               " Hide buffers instead of closing them.
 set scrolloff=5          " Keep X lines above and below the cursor
 set title                " Change terminal title to file path
-set directory=/tmp       " Moving swp files out of working dir
-"set nobackup             " I use git instead
-"set noswapfile           " I use git instead
 set virtualedit=onemore  " Allow for cursor beyond last character
 set history=500          " Keep 500 lines of command history
 set ruler                " Show the cursor position all the time
@@ -83,6 +80,13 @@ set backspace=indent,eol,start                        " Allow backspacing over e
 set listchars=tab:>.,trail:.,extends:#,nbsp:.         " Highlight problematic whitespace
 set viewoptions=folds,options,cursor,unix,slash       " better unix / windows compatibility
 set statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P " Show buffer number next to file name in status line
+
+" Move backup, swap and undo out of work dir
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+if exists("&undodir")
+	set undodir=~/.vim/undo
+endif
 
 " Prevent auto indentation when pasting from clipboard
 set pastetoggle=togl
