@@ -12,6 +12,7 @@
 	lg = log -p
 	fakeignore = update-index --assume-unchanged
 	find = !git log --color -p -S
+	graph = log --all --graph --decorate --oneline -n40
 [color]
 	branch  = auto
 	diff = auto
