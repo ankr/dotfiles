@@ -11,6 +11,7 @@
 	cp = cherry-pick
 	lg = log -p
 	fakeignore = update-index --assume-unchanged
+	find = !git log --color -p -S
 [color]
 	branch  = auto
 	diff = auto
