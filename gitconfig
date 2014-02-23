@@ -18,7 +18,9 @@
 	branch  = auto
 	diff = auto
 	status = auto
-[push]
-	default = current
+[core]
+	excludesfile = ~/.gitignore
 [include]
 	path = ~/.dotfiles/git_custom
+[push]
+	default = current

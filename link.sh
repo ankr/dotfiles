@@ -8,6 +8,7 @@ do
   if [ "$base" == "bash_profile" ] ||
      [ "$base" == "bashrc" ] ||
      [ "$base" == "gitconfig" ] ||
+     [ "$base" == "gitignore" ] ||
      [ "$base" == "vimrc" ] ||
      [ "$base" == "inputrc" ] ||
      [ "$base" == "screenrc" ]
