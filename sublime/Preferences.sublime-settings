@@ -18,8 +18,8 @@
 	],
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true,
 	"show_encoding": true,
-	"show_line_endings": true
+	"show_line_endings": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
 }
