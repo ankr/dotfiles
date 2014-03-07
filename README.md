@@ -5,8 +5,6 @@ These configurations has been used in OSX, Debian and Ubuntu.
 
 ## Installation
 
-Look here for the [installation of Sublime Text settings](https://github.com/ankr/dotfiles/tree/master/sublime).
-
 ### 1. Clone repository
 ```git clone git@github.com:ankr/dotfiles.git ~/.dotfiles```
 > It's assumed that you clone into `~/.dotfiles`
@@ -32,3 +30,16 @@ Setup symbolic link for ~/.vimrc
 ```
 
 ### 5. Add custom stuff to `~/.dotfiles/bash_custom`
+Add your personal aliases and other stuff in here.
+
+## Atom Editor
+In order to install settings for Atom editor, execute this in a shell.
+```
+ln -si ~/.dotfiles/atom/* ~/.atom/
+```
+
+## Sublime Text 3
+In order to install settings for Sublime Text 3 editor, execute this in a shell.
+```
+ln -si ~/.dotfiles/sublime/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+```

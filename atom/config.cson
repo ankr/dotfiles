@@ -1,0 +1,24 @@
+'welcome':
+  'showOnStartup': false
+'editor':
+  'tabLength': 4
+  'autoIndent': true
+  'autoIndentOnPaste': false
+  'softWrap': true
+  'fontSize': 12
+  'showInvisibles': true
+  'showIndentGuide': true
+  'showLineNumbers': true
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'atom-dark-syntax'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+'whitespace':
+  'ensureSingleTrailingNewline': true
+  'removeTrailingWhitespace': true
