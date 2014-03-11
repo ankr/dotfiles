@@ -11,8 +11,7 @@ These configurations has been used in OSX, Debian and Ubuntu.
 
 ### 2. Link dotfiles
 ```
-$ chmod +x link.sh
-$ ./link.sh
+$ .~/.dotfiles/link.sh
 Setup symbolic link for ~/.bash_profile
 Setup symbolic link for ~/.gitconfig
 Setup symbolic link for ~/.inputrc
