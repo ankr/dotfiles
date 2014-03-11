@@ -1,10 +1,26 @@
-set completion-ignore-case on
-set show-all-if-ambiguous on
-set completion-query-items 50
-set expand-tilde on
-set visible-stats on
-
-set convert-meta off
+# Allow utf-8 input and output
 set meta-flag on
 set input-meta on
 set output-meta on
+set convert-meta off
+
+# Case insensitive auto completion
+set completion-ignore-case on
+
+# Tab only once to show all matches
+set show-all-if-ambiguous on
+
+# If more than 50 items, ask to show all
+set completion-query-items 50
+
+# `~` will expand to actual path when tab'ed
+set expand-tilde on
+
+# Extra file informations (like `ls -F`)
+set visible-stats on
+
+# Add trailing slash when auto completing symlinks
+set mark-symlinked-directories on
+
+# Allow auto completion from the middle of word (bash v4 only)
+set skip-completed-text on
