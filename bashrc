@@ -50,7 +50,7 @@ alias psg="ps aux | grep $0"
 # return the machines local IP address
 function intip {
 	local INTF=`route get default | grep interface | awk '{print $2}'`
-	local IP=`ifconfig $INTF | grep 'inet ' | cut -d ' ' -f 2`
+	local IP=`/sbin/ifconfig $INTF | grep 'inet ' | cut -d ' ' -f 2`
 	echo $IP
 }
 
