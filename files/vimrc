@@ -17,9 +17,9 @@ autocmd BufWinEnter * silent! loadview
 " Don't do it when the position is invalid or when inside an event handler
 " Also don't do it when the mark is in the first line,
 autocmd BufReadPost *
-	\ if line("'\"") > 1 && line("'\"") <= line("$") |
-	\   exe "normal! g`\"" |
-	\ endif
+  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
 
 " When entering Insert mode turn of search highlighting,
 " and turn it back on again when leaving insert mode.
@@ -28,9 +28,9 @@ autocmd InsertLeave * set hlsearch
 
 " Keep undo history when buffer is closed
 if has('persistent_undo')
-	set undofile         " Enabling undo on file
-	set undolevels=1000  " Number of changes that can be undone
-	set undoreload=10000 " Number lines to save for undo on a buffer reload
+  set undofile         " Enabling undo on file
+  set undolevels=1000  " Number of changes that can be undone
+  set undoreload=10000 " Number lines to save for undo on a buffer reload
 endif
 
 " Syntax highlight
@@ -42,7 +42,7 @@ set background=dark
 
 " Enabling mouse if any
 if has('mouse')
-	set mouse=a
+  set mouse=a
 endif
 
 " Various settings
@@ -63,7 +63,7 @@ set incsearch            " Find as you type search
 set ignorecase           " Case insensitive search
 set smartcase            " Case sensitive when uc present
 set hlsearch             " Highlight search terms
-set winminheight=0       " Windows can be 0 lines high 
+set winminheight=0       " Windows can be 0 lines high
 set autoindent           " Indent at the same level of the previous line
 set list                 " Show whitespace characters
 set wildmenu             " Better command line autocompletion
@@ -85,7 +85,7 @@ set statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P " Show buffer number next 
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")
-	set undodir=~/.vim/undo
+  set undodir=~/.vim/undo
 endif
 
 " Prevent auto indentation when pasting from clipboard

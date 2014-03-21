@@ -1,14 +1,14 @@
 {
-	"installed_packages":
-	[
-		"ColorPicker",
-		"Dayle Rees Color Schemes",
-		"Dotfiles Syntax Highlighting",
-		"EditorConfig",
-		"Emmet",
-		"Emmet Css Snippets",
-		"Hayaku - tools for writing CSS faster",
-		"Sass",
-		"SCSS"
-	]
+  "installed_packages":
+  [
+   "ColorPicker",
+   "Dayle Rees Color Schemes",
+   "Dotfiles Syntax Highlighting",
+   "EditorConfig",
+   "Emmet",
+   "Emmet Css Snippets",
+   "Hayaku - tools for writing CSS faster",
+   "Sass",
+   "SCSS"
+  ]
 }

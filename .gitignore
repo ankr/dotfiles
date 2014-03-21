@@ -1,2 +1,2 @@
-bash_custom
-git_custom
+custom/*
+!custom/empty
