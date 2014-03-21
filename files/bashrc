@@ -45,7 +45,7 @@ alias scls="screen -ls"
 alias syntax="find . -name '*.php' -exec php -l {} \;"
 alias grin='grep -rin'
 alias psa="ps aux"
-alias psg="ps aux | grep $0"
+alias psg="ps aux | grep $1"
 
 # return the machines local IP address
 function intip {
