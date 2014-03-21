@@ -1,0 +1,20 @@
+# Base editorconfig for new projects
+
+root = true
+
+[*]
+end_of_line = lf
+indent_style = space
+indent_size = 2
+tab_width = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[{bash*,git*,vimrc}]
+indent_style = tab
+
+[*.md]
+indent_style = tab
+trim_trailing_whitespace = false
+insert_final_newline = false
