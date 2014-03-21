@@ -19,6 +19,9 @@
     '.svn'
     '.DS_Store'
   ]
+  'disabledPackages': [
+    'metrics'
+  ]
 'whitespace':
   'ensureSingleTrailingNewline': true
   'removeTrailingWhitespace': true
