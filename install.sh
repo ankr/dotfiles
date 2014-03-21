@@ -6,7 +6,6 @@ do
   base=$(basename $file)
   path="$HOME/.$base"
 
-
   # Backup existing files or delete if it's a symlink
   if [ -h $path ] ; then
     rm $path
