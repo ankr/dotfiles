@@ -1,25 +1,25 @@
 {
-	"always_show_minimap_viewport": true,
-	"auto_complete_commit_on_tab": true,
-	"auto_complete_delay": 0,
-	"auto_find_in_selection": true,
-	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/Grunge.tmTheme",
-	"create_window_at_startup": false,
-	"default_encoding": "UTF-8",
-	"drag_text": false,
-	"draw_minimap_border": true,
-	"draw_white_space": "all",
-	"enable_telemetry": false,
-	"ensure_newline_at_eof_on_save": true,
-	"highlight_line": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"scroll_past_end": true,
-	"shift_tab_unindent": true,
-	"show_encoding": true,
-	"show_line_endings": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+  "always_show_minimap_viewport": true,
+  "auto_complete_commit_on_tab": true,
+  "auto_complete_delay": 0,
+  "auto_find_in_selection": true,
+  "color_scheme": "Packages/Dayle Rees Color Schemes/sublime/Grunge.tmTheme",
+  "create_window_at_startup": false,
+  "default_encoding": "UTF-8",
+  "drag_text": false,
+  "draw_minimap_border": true,
+  "draw_white_space": "all",
+  "enable_telemetry": false,
+  "ensure_newline_at_eof_on_save": true,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+   "Vintage"
+  ],
+  "scroll_past_end": true,
+  "shift_tab_unindent": true,
+  "show_encoding": true,
+  "show_line_endings": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": true
 }

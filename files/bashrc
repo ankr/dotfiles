@@ -20,9 +20,9 @@ export HISTTIMEFORMAT='%F %T '
 
 # make `ls` show colors
 if [ $(uname) == "Linux" ] ; then
-	alias ls='ls --color=auto'
+  alias ls='ls --color=auto'
 else # OS X
-	alias ls='ls -G'
+  alias ls='ls -G'
 fi
 
 # aliases changing default behaviors
@@ -49,48 +49,48 @@ alias psg="ps aux | grep $0"
 
 # return the machines local IP address
 function intip {
-	local INTF=`route get default | grep interface | awk '{print $2}'`
-	local IP=`ifconfig $INTF | grep 'inet ' | cut -d ' ' -f 2`
-	echo $IP
+  local INTF=`route get default | grep interface | awk '{print $2}'`
+  local IP=`ifconfig $INTF | grep 'inet ' | cut -d ' ' -f 2`
+  echo $IP
 }
 
 # return the machines public IP address
 function extip {
-	local IP=`curl -sS http://checkip.dyndns.org | awk '{print $6}' | awk 'BEGIN {FS = "<"} {print $1}'`
-	echo $IP
+  local IP=`curl -sS http://checkip.dyndns.org | awk '{print $6}' | awk 'BEGIN {FS = "<"} {print $1}'`
+  echo $IP
 }
 
 # make sure `have` is defined
 have() {
-	unset -v have
-	PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
-	have="yes"
+  unset -v have
+  PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
+  have="yes"
 }
 
 # load bash completions
 if [ -d /etc/bash_completion.d ] ; then
-	for file in "/etc/bash_completion.d/*" ; do
-		if [ -f "$file" ] ; then
-			source "$file"
-		fi
-	done
+  for file in "/etc/bash_completion.d/*" ; do
+    if [ -f "$file" ] ; then
+      source "$file"
+    fi
+  done
 fi
 
 # adding brew bash_completion if available
 if command -v brew > /dev/null && [ -f $(brew --prefix)/etc/bash_completion ] ; then
-	source $(brew --prefix)/etc/bash_completion
+  source $(brew --prefix)/etc/bash_completion
 fi
 
 # shows PS1 like:
-# $user @ $host [$pwd] ($gitbranch)
+# $user @ $host [$cwd] ($gitbranch)
 # if root then $user will be red
 if [[ $EUID == 0 ]] ; then
-	export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;32m\]\w \[\e[0m\]] [ \D{%H:%M} ] $(__git_ps1 "( %s )")\n\[\e[1m\]-> \[\e[0m\]'
+  export PS1='\[\e[1;31m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;32m\]\w \[\e[0m\]] [ \D{%H:%M} ] $(__git_ps1 "( %s )")\n\[\e[1m\]-> \[\e[0m\]'
 else
-	export PS1='\[\e[1;36m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;32m\]\w \[\e[0m\]] [ \D{%H:%M} ] $(__git_ps1 "( %s )")\n\[\e[1m\]-> \[\e[0m\]'
+  export PS1='\[\e[1;36m\]\u \[\e[0m\]@ \[\e[1;33m\]\H \[\e[0m\][ \[\e[1;32m\]\w \[\e[0m\]] [ \D{%H:%M} ] $(__git_ps1 "( %s )")\n\[\e[1m\]-> \[\e[0m\]'
 fi
 
-# read .bash_custom
-if [ -f ~/.dotfiles/bash_custom ] ; then
-	source ~/.dotfiles/bash_custom
+# read custom bashrc
+if [ -f ~/.dotfiles/custom/bashrc ] ; then
+  source ~/.dotfiles/custom/bashrc
 fi

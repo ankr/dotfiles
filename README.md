@@ -1,7 +1,11 @@
 # dotfiles
 
 My dot files. Their contents is brought together from all parts of the internet.
-These configurations has been used in OSX, Debian and Ubuntu.
+
+## About
+This repository contains configuration files to make your life in the terminal a lot better. Checkout the `files` directory to what is actually going on.
+
+*These configurations has been used in OSX, Debian and Ubuntu.*
 
 ## Installation
 
@@ -11,15 +15,13 @@ These configurations has been used in OSX, Debian and Ubuntu.
 
 ### 2. Link dotfiles
 ```
-$ .~/.dotfiles/link.sh
-Setup symbolic link for ~/.bash_profile
+$ ~/.dotfiles/install.sh
+Setup symbolic link for ~/.bashrc
 Setup symbolic link for ~/.gitconfig
-Setup symbolic link for ~/.inputrc
-Setup symbolic link for ~/.screenrc
-Setup symbolic link for ~/.vimrc
+etc ...
 ```
 
-### 4. Setup up `~/.dotfiles/git_custom`
+### 4. Setup up `~/.dotfiles/custom/gitconfig`
 ```
 [user]
 	name = <Your name>
@@ -28,7 +30,7 @@ Setup symbolic link for ~/.vimrc
 	user = <Your username>
 ```
 
-### 5. Add custom stuff to `~/.dotfiles/bash_custom`
+### 5. Add custom stuff to `~/.dotfiles/custom/bashrc`
 Add your personal aliases and other stuff in here.
 
 ## Atom Editor

@@ -1,0 +1,26 @@
+[alias]
+  st = status
+  co = checkout
+  nb = checkout -b
+  ap = add -p
+  df = diff
+  ci = commit
+  cv = commit -v
+  br = branch
+  ca = commit --amend
+  cp = cherry-pick
+  lp = log -p
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  fakeignore = update-index --assume-unchanged
+  find = !git log --color -p -S
+  undo = reset HEAD^1
+[color]
+  branch  = auto
+  diff = auto
+  status = auto
+[core]
+  excludesfile = ~/.gitignore
+[include]
+  path = ~/.dotfiles/custom/gitconfig
+[push]
+  default = current
