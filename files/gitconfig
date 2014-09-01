@@ -4,6 +4,7 @@
   nb = checkout -b
   ap = add -p
   df = diff
+  dt = difftool
   ci = commit
   cv = commit -v
   br = branch
@@ -25,3 +26,7 @@
   path = ~/.dotfiles/custom/gitconfig
 [push]
   default = current
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
