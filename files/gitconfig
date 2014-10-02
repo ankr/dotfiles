@@ -20,6 +20,16 @@
   branch  = auto
   diff = auto
   status = auto
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+  deleted = red bold
+[color "diff"]
+  meta = cyan bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [core]
   excludesfile = ~/.gitignore
 [include]
