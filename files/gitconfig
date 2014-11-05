@@ -12,6 +12,7 @@
   cp = cherry-pick
   lp = log -p
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  sd = !git diff stash@{0} `git rev-parse --abbrev-ref HEAD`
   fakeignore = update-index --assume-unchanged
   find = !git log --color -p -S
   undo = reset HEAD^1
