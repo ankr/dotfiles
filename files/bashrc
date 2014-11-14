@@ -42,10 +42,18 @@ alias ...="cd ../../"
 
 # convenience aliases
 alias scls="screen -ls"
-alias syntax="find . -name '*.php' -exec php -l {} \;"
 alias grin='grep -rin'
 alias psa="ps aux"
 alias psg="ps aux | grep $1"
+
+# PHP Syntax checker
+# @param $1 Path to check
+function syntax() {
+  local LOCATION=${1-.}
+  printf "Searching for PHP syntax errors in '$LOCATION'\n"
+  find $LOCATION -name '*.php' -exec php -l {} \; | grep -v "No syntax errors"
+  printf "Done\n"
+}
 
 # return the machines local IP address
 function intip {
