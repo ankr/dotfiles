@@ -5,6 +5,7 @@
   ap = add -p
   df = diff
   dt = difftool
+  ds = diff --staged
   ci = commit
   cv = commit -v
   br = branch
