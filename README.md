@@ -33,6 +33,10 @@ etc ...
 ### 5. Add custom stuff to `~/.dotfiles/custom/bashrc`
 Add your personal aliases and other stuff in here.
 
+```
+export DOTFILES_EMAIL="your@email.com"
+```
+
 ## Atom Editor
 In order to install settings for Atom editor, execute this in a shell.
 ```
