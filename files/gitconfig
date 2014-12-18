@@ -1,5 +1,5 @@
 [alias]
-  st = status
+  st = status -sb
   co = checkout
   nb = checkout -b
   ap = add -p
