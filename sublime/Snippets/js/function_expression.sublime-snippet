@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-var ${1:name} = function () {
-  ${2}
+var ${1:name} = function (${2}) {
+  ${3}
 };
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
