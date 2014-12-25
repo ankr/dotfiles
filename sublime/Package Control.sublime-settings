@@ -1,4 +1,9 @@
 {
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"Dayle Rees Color Schemes",
@@ -7,6 +12,7 @@
 		"Emmet",
 		"Emmet Css Snippets",
 		"Hayaku - tools for writing CSS faster",
+		"Package Control",
 		"Sass"
 	]
 }
