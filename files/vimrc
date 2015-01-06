@@ -92,10 +92,12 @@ endif
 set pastetoggle=togl
 
 " Prevent lazy pinky on the shift button
-:command WQ wq
-:command Wq wq
 :command W w
 :command Q q
+:command WQ wq
+:command Wq wq
+:command QA wq
+:command Qa wq
 
 " Map the leader to something easier accessible
 let mapleader = ","
