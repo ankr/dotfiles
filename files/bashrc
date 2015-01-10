@@ -47,25 +47,25 @@ alias psa="ps aux"
 alias psg="ps aux | grep $1"
 
 # PHP Syntax checker
-function phpsc () {
+phpsc () {
   find ${1-$PWD} -name '*.php' -exec php -l {} \;
 }
 
 # return the machines local IP address
-function intip {
+intip () {
   local INTF=`route get default | grep interface | awk '{print $2}'`
   local IP=`ifconfig $INTF | grep 'inet ' | cut -d ' ' -f 2`
   echo $IP
 }
 
 # return the machines public IP address
-function extip {
+extip () {
   local IP=`curl -sS http://checkip.dyndns.org | awk '{print $6}' | awk 'BEGIN {FS = "<"} {print $1}'`
   echo $IP
 }
 
 # make sure `have` is defined
-have() {
+have () {
   unset -v have
   PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin type $1 &>/dev/null &&
   have="yes"
