@@ -48,7 +48,9 @@ alias psg="ps aux | grep $1"
 
 # PHP Syntax checker
 phpsc () {
-  find ${1-$PWD} -name '*.php' -exec php -l {} \;
+  if [[ ! -n $(find ${1-$PWD} -name '*.php' -exec php -l {} \; | grep -v "No syntax errors") ]] ; then
+    echo "No syntax errors" >&2
+  fi
 }
 
 # return the machines local IP address
