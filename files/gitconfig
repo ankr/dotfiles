@@ -1,5 +1,5 @@
 [alias]
-  st = status
+  st = status -sb
   co = checkout
   nb = checkout -b
   ap = add -p
@@ -37,6 +37,8 @@
   excludesfile = ~/.gitignore
 [include]
   path = ~/.dotfiles/custom/gitconfig
+[status]
+ showUntrackedFiles = all
 [push]
   default = current
 [diff]
