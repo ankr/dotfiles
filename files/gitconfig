@@ -45,3 +45,5 @@
   tool = vimdiff
 [difftool]
   prompt = false
+[interactive]
+  singlekey = true
