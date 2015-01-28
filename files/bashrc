@@ -46,6 +46,11 @@ alias grin='grep -rin'
 alias psa="ps aux"
 alias psg="ps aux | grep $1"
 
+# Start ssh agent and add all private keys found in ~/.ssh/
+addsshkeys () {
+  eval `ssh-agent` && find ~/.ssh/ -name "id_rsa" | xargs ssh-add
+}
+
 # PHP Syntax checker
 phpsc () {
   if [[ ! -n $(find ${1-$PWD} -name '*.php' -exec php -l {} \; | grep -v "No syntax errors") ]] ; then
