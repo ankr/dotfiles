@@ -1,8 +1,6 @@
 {
-	"installed_dependencies":
+	"in_process_packages":
 	[
-		"0_package_control_loader",
-		"bz2"
 	],
 	"installed_packages":
 	[
