@@ -13,10 +13,10 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 shopt -s histappend
 shopt -s cmdhist
 export HISTFILESIZE=1000000
-export HISTSIZE=1000000
+export HISTSIZE=10000
 export HISTCONTROL=ignoredups
 export HISTIGNORE='ls:ll:l:history'
-export HISTTIMEFORMAT='%F %T '
+export HISTTIMEFORMAT='%Y-%m-%d %T '
 
 # make `ls` show colors
 if [ $(uname) == "Linux" ] ; then
