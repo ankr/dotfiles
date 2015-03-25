@@ -19,8 +19,8 @@ set expand-tilde on
 # Extra file informations (like `ls -F`)
 set visible-stats on
 
-# Add trailing slash when auto completing symlinks
-set mark-symlinked-directories on
+# Prevent trailing slash when auto completing symlinks
+set mark-symlinked-directories off
 
 # Allow auto completion from the middle of word (bash v4 only)
 set skip-completed-text on
