@@ -30,7 +30,6 @@ alias grep="grep --color=auto"
 alias mkdir="mkdir -p"
 alias less="less -r"
 alias tree="tree -C"
-alias sublime="sublime -a"
 
 # ls aliasses
 alias l="ls -l"
