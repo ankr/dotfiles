@@ -39,6 +39,9 @@ alias ll="ls -la"
 alias ..="cd ../"
 alias ...="cd ../../"
 
+# return the machines public IP address
+alias extip="dig +short myip.opendns.com @resolver1.opendns.com"
+
 # convenience aliases
 alias scls="screen -ls"
 alias grin='grep -rin'
@@ -61,12 +64,6 @@ phpsc () {
 intip () {
   local INTF=`route get default | grep interface | awk '{print $2}'`
   local IP=`ifconfig $INTF | grep 'inet ' | cut -d ' ' -f 2`
-  echo $IP
-}
-
-# return the machines public IP address
-extip () {
-  local IP=`curl -sS http://checkip.dyndns.org | awk '{print $6}' | awk 'BEGIN {FS = "<"} {print $1}'`
   echo $IP
 }
 
