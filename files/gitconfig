@@ -49,3 +49,5 @@
   prompt = false
 [interactive]
   singlekey = true
+[rerere]
+  enabled = true
