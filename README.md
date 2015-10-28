@@ -33,18 +33,6 @@ etc ...
 ### 5. Add custom stuff to `~/.dotfiles/custom/bashrc`
 Add your personal aliases and other stuff in here.
 
-```
-export DOTFILES_EMAIL="your@email.com"
-```
-
-## Atom Editor
-In order to install settings for Atom editor, execute this in a shell.
-```
-ln -si ~/.dotfiles/atom/* ~/.atom/
-```
-
-## Sublime Text 3
-In order to install settings for Sublime Text 3 editor, execute this in a shell.
-```
-ln -si ~/.dotfiles/sublime/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+```bash
+export DOTFILES_EMAIL="your@email.com" # Used for bin/backup.sh
 ```

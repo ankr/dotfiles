@@ -1,3 +1,0 @@
-[
-  { "keys": ["super+shift+i"], "command": "reindent", "args": {"single_line": false} }
-]

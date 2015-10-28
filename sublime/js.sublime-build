@@ -1,5 +1,0 @@
-{
-  "cmd": ["node", "$file"],
-  "path": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
-  "selector": "source.js"
-}
