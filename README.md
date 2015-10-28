@@ -3,9 +3,9 @@
 My dot files. Their contents is brought together from all parts of the internet.
 
 ## About
-This repository contains configuration files to make your life in the terminal a lot better. Checkout the `files` directory to what is actually going on.
+This repository contains stuff to attempt to make the life in the terminal easier. Checkout the `files` directory to what is actually going on.
 
-*These configurations has been used in OSX, Debian and Ubuntu.*
+*Use at own risk!*
 
 ## Installation
 
