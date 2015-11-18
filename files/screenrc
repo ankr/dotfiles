@@ -8,3 +8,7 @@ vbell_msg       " *beep* "
 defscrollback   50000
 shell -$SHELL
 defmonitor on
+
+# Always start screen with utf8 enabled. (screen -U)
+defutf8 on
+defencoding utf-8
