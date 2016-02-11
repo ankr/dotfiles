@@ -125,3 +125,6 @@ nnoremap F :echo expand('%:p')<Enter>
 " Do not exit visual mode when shifting text
 vnoremap < <gv
 vnoremap > >gv
+
+# Support for FZF
+set rtp+=/usr/local/opt/fzf
