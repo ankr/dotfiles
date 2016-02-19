@@ -126,5 +126,5 @@ nnoremap F :echo expand('%:p')<Enter>
 vnoremap < <gv
 vnoremap > >gv
 
-# Support for FZF
+" Support for FZF
 set rtp+=/usr/local/opt/fzf
