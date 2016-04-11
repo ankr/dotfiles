@@ -22,12 +22,27 @@ etc ...
 ```
 
 ### 4. Setup up `~/.dotfiles/custom/gitconfig`
+
+#### Basic
 ```
 [user]
 	name = <Your name>
 	email = <Your email>
 [github]
 	user = <Your username>
+```
+
+#### Using GPG key to signing commits (only the owner can now commit as this user)
+Need help? https://help.github.com/categories/gpg/
+```
+[user]
+	name = <Your name>
+	email = <Your email>
+	signingkey = <Sign Key Id>
+[github]
+	user = <Your username>
+[commit]
+	gpgsign = true
 ```
 
 ### 5. Add custom stuff to `~/.dotfiles/custom/bashrc`
