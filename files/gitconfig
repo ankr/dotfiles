@@ -8,7 +8,7 @@
   ds = diff --staged
   ci = commit
   cv = commit -v
-  br = branch
+  br = branch --sort=-committerdate
   ca = commit --amend
   cp = cherry-pick
   lp = log -p
