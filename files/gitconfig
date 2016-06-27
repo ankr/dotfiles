@@ -37,6 +37,7 @@
   new = green bold
 [core]
   excludesfile = ~/.gitignore
+  autocrlf = input
 [include]
   path = ~/.dotfiles/custom/gitconfig
 [status]
