@@ -1,6 +1,7 @@
 #!/bin/sh
 #
 # Opens the Github page for a repo/branch in your browser.
+# Copied directly from: https://github.com/jasonmccreary/gh
 #
 # gh [remote] [branch]
 
