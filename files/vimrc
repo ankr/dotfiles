@@ -112,12 +112,9 @@ map <C-L> <C-W>l<C-W>_
 " In wrapped lines goes down/up to next row, rather than next line in file.
 nnoremap j gj
 nnoremap k gk
-vnoremap j gj
-vnoremap k gk
 
 " Making Y act the same way as D and C
 nnoremap Y y$
-vnoremap Y y$
 
 " Getting full path of current file
 nnoremap F :echo expand('%:p')<Enter>
