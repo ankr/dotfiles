@@ -19,6 +19,3 @@ do
   ln -s $file $path
   echo "Setup symbolic link for $path"
 done
-
-# Make sure vim backup directories exists
-mkdir -p {~/.vim/backups,~/.vim/swaps,~/.vim/undo}

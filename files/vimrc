@@ -82,6 +82,7 @@ set viewoptions=folds,options,cursor,unix,slash       " better unix / windows co
 set statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P " Show buffer number next to file name in status line
 
 " Move backup, swap and undo out of work dir
+silent !mkdir -p ~/.vim/{backups,swaps,undo} > /dev/null 2>&1
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")
