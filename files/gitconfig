@@ -18,6 +18,7 @@
   review = !GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD) && git log -p origin/$GIT_CURRENT_BRANCH..$GIT_CURRENT_BRANCH
   winners = shortlog --numbered --summary
   fakeignore = update-index --assume-unchanged
+  no-fakeignore = update-index --no-assume-unchanged
   find = !git log --color -p -S
   undo = reset HEAD^1
   cleanup = "!git branch --merged | grep -vE 'master|develop' | xargs -n 1 git branch -d"
