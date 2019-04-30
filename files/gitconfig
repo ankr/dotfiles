@@ -14,7 +14,7 @@
   lp = log -p
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   sd = !git diff stash@{0} `git rev-parse --abbrev-ref HEAD`
-  fp = fetch -p
+  fp = fetch --prune --prune-tags
   review = !GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD) && git log -p origin/$GIT_CURRENT_BRANCH..$GIT_CURRENT_BRANCH
   winners = shortlog --numbered --summary
   fakeignore = update-index --assume-unchanged
@@ -53,6 +53,3 @@
   singlekey = true
 [rerere]
   enabled = true
-[fetch]
-  prune = true
-  pruneTags = true
