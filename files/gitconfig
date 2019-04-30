@@ -43,6 +43,8 @@
   path = ~/.dotfiles/custom/gitconfig
 [status]
  showUntrackedFiles = all
+[pull]
+  rebase = true
 [push]
   default = current
 [diff]
