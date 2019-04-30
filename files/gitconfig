@@ -53,3 +53,6 @@
   singlekey = true
 [rerere]
   enabled = true
+[fetch]
+  prune = true
+  pruneTags = true
