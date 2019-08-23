@@ -71,6 +71,7 @@ set wildignore=*~,*.bak  " Only autocomplete *real* files
 set laststatus=2         " Always display the status line, even if only one window is displayed
 set tabstop=2            " Tab size
 set shiftwidth=2         " More tab size
+set expandtab            " Convert tabs to spaces
 set shiftround           " I am not sure what this do, but everybody has it ;)
 set smarttab             " Smart tab
 set foldmethod=manual    " I want to control the folding
