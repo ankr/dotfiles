@@ -22,6 +22,7 @@
   find = !git log --color -p -S
   undo = reset HEAD^1
   cleanup = "!git branch --merged | grep -vE 'master|develop' | xargs -n 1 git branch -d"
+  alias = config --get-regexp ^alias
 [color]
   branch  = auto
   diff = auto
