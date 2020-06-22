@@ -46,6 +46,8 @@
  showUntrackedFiles = all
 [push]
   default = current
+[pull]
+  ff = only
 [diff]
   tool = vimdiff
 [difftool]
