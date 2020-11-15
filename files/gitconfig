@@ -42,6 +42,8 @@
   autocrlf = input
 [include]
   path = ~/.dotfiles/custom/gitconfig
+[init]
+  defaultBranch = main
 [status]
  showUntrackedFiles = all
 [push]
