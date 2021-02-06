@@ -1,1 +1,4 @@
+# Disable ZSH warning on macOS
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 source ~/.dotfiles/files/bashrc
