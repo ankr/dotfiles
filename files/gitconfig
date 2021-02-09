@@ -21,7 +21,7 @@
   no-fakeignore = update-index --no-assume-unchanged
   find = !git log --color -p -S
   undo = reset HEAD^1
-  cleanup = "!git branch --merged | grep -vE 'master|main|develop' | xargs -n 1 git branch -d"
+  cleanup = "!git branch --merged | grep -vE 'master|main|develop|development' | xargs -n 1 git branch -d"
   su = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
   alias = config --get-regexp ^alias
 [color]
