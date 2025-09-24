@@ -68,6 +68,26 @@ intip () {
   echo $IP
 }
 
+# Open a bash shell inside a running docker container.
+# Just `dcbash` or pass arguments to docker exec like `dcbash -u root`
+dcbash() {
+  local container
+
+  echo "Select a running Docker Compose container:"
+  select container in $(docker ps --format '{{.Names}}'); do
+    if [ -n "$container" ]; then
+      break
+    fi
+  done
+
+  # Try bash, fallback to sh
+  if docker exec "$@" "$container" bash -c "command -v bash" > /dev/null 2>&1; then
+    docker exec -it "$@" "$container" bash
+  else
+    docker exec -it "$@" "$container" sh
+  fi
+}
+
 # make sure `have` is defined
 have () {
   unset -v have
